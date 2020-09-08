@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Xena Event</title>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <img
+        src="https://i.pinimg.com/originals/43/9f/4f/439f4f19daff6e585c80128f0342122b.png"
+        alt="Hot Air Ballon logo"
+        style="display: inline"
+        width="70"
+      />
+      <h1 style="display: inline">Hot Air Ballon Event</h1>
+      <h4>Presented by Xena Events</h4>
+    </div>
+    <form>
+      <div style="padding: 0.5em">
+        <label for="Name">Name: </label>
+        <input name="Name" type="text" pattern="[A-Za-z]+" required />
+      </div>
+      <div style="padding: 0.5em">
+        <label for="Age">Age: </label>
+        <input name="Age" type="number" min="18" required />
+      </div>
+      <div style="padding: 0.5em">
+        <label for="Email">Email:</label>
+        <input name="Email" type="email" required />
+      </div>
+      <div style="padding: 0.5em">
+        <label for="City">City: </label>
+        <input list="City" required />
+        <datalist id="City">
+          <option value="Rajkot"> </option>
+          <option value="Vizag"></option>
+          <option value="Bangalore"></option>
+        </datalist>
+      </div>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
